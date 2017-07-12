@@ -11,9 +11,14 @@ import Foundation
 
 class DirectionViewController: UIViewController {
     
+    @IBOutlet weak var ButtonLabel: UIButton!
+    
+    var output: String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        ButtonLabel.setTitle(output, for: .normal)
     }
     
     override func didReceiveMemoryWarning() {

@@ -32,6 +32,9 @@
                                 <state key="normal" title="North">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="NorthButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XO5-2G-fd4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h3-Wm-2N5">
                                 <rect key="frame" x="307" y="311" width="44" height="44"/>
@@ -43,6 +46,9 @@
                                 <state key="normal" title="East">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="EastButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ll-dy-Vnf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dem-3n-42M">
                                 <rect key="frame" x="165.5" y="603" width="44" height="44"/>
@@ -54,6 +60,9 @@
                                 <state key="normal" title="South">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="SouthButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xna-XR-Nxk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvN-YD-kod">
                                 <rect key="frame" x="24" y="311" width="44" height="44"/>
@@ -65,6 +74,9 @@
                                 <state key="normal" title="West">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="WestButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cgr-du-VVX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,6 +91,9 @@
                             <constraint firstItem="cvN-YD-kod" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="zeJ-5i-eJG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="xJR-qI-FPq" kind="presentation" identifier="directionSegue" id="UYR-Ie-FkQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,24 +110,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3d-xA-ySf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIm-TO-CwL">
                                 <rect key="frame" x="142" y="301" width="90" height="65"/>
-                                <color key="backgroundColor" red="0.88712471546082416" green="0.7932185434400727" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="0sJ-OO-3xL"/>
-                                    <constraint firstAttribute="width" constant="90" id="eC0-mf-XFc"/>
+                                    <constraint firstAttribute="height" constant="65" id="Glo-gj-un7"/>
+                                    <constraint firstAttribute="width" constant="90" id="yGT-g9-Pbg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.44232177700000003" green="0.30607226510000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.44232177700000003" green="0.30607226510000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="O3d-xA-ySf" firstAttribute="centerY" secondItem="vXR-BD-Day" secondAttribute="centerY" id="348-Zt-onl"/>
-                            <constraint firstItem="O3d-xA-ySf" firstAttribute="centerX" secondItem="vXR-BD-Day" secondAttribute="centerX" id="KhI-yj-PCH"/>
+                            <constraint firstItem="lIm-TO-CwL" firstAttribute="centerY" secondItem="vXR-BD-Day" secondAttribute="centerY" id="CrB-ow-Rfh"/>
+                            <constraint firstItem="lIm-TO-CwL" firstAttribute="centerX" secondItem="vXR-BD-Day" secondAttribute="centerX" id="fgo-1K-qSk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ButtonLabel" destination="lIm-TO-CwL" id="Fvd-Gb-afk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dm0-r6-T6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
