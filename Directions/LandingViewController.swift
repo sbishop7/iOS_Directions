@@ -26,6 +26,9 @@ class LandingViewController: UIViewController {
         performSegue(withIdentifier: "directionSegue", sender: sender)
     }
     
+    @IBAction func unwindToLanding(segue: UIStoryboardSegue) {
+    
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
