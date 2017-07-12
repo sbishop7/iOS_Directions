@@ -10,23 +10,12 @@ import UIKit
 
 class LandingViewController: UIViewController {
 
-    @IBAction func NorthButtonPressed(_ sender: UIButton) {
+    @IBAction func ButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "directionSegue", sender: sender)
     }
     
-    @IBAction func EastButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "directionSegue", sender: sender)
-    }
     
-    @IBAction func SouthButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "directionSegue", sender: sender)
-    }
-    
-    @IBAction func WestButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "directionSegue", sender: sender)
-    }
-    
-    @IBAction func unwindToLanding(segue: UIStoryboardSegue) {
+    @IBAction func unwindToLanding(_ segue: UIStoryboardSegue) {
     
     }
     
