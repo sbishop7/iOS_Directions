@@ -13,10 +13,6 @@ class DirectionViewController: UIViewController {
     
     @IBOutlet weak var ButtonLabel: UIButton!
     
-    @IBAction func unwindButtonPressed(_ sender: UIButton) {
-//        dismiss(animated: true, completion: nil)
-        performSegue(withIdentifier: "unwindSegueToLanding", sender: self)
-    }
     var output: String?
     
     
